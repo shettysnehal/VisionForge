@@ -1,0 +1,16 @@
+/* Global styles for all pages */
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+  background-color: #a0d2eb; /* Ice Cold background color */
+  color: white; /* Default font color */
+}
+
+/* Center container for each page */
+.container,
+.another-pic-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
