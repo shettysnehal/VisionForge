@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HiddenQRCodePage.css";
 
 function HiddenQRCodePage() {
+  const [showImage, setShowImage] = useState(false); // State to control image visibility
+
   const handleButtonClick = () => {
-    window.location.href = "/canuseeit"; // Redirect to another page
+    setShowImage(true); // Show the image when the button is clicked
   };
 
   return (
@@ -24,6 +26,15 @@ function HiddenQRCodePage() {
         >
           Go
         </button>
+
+        {/* Show Image */}
+        {showImage && (
+          <img
+            src="scanner.png" /* Replace with your hidden image path */
+            alt="Hidden Content"
+            className="hidden-image"
+          />
+        )}
       </div>
     </div>
   );
