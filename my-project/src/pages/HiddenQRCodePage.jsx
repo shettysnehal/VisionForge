@@ -11,7 +11,7 @@ function HiddenQRCodePage() {
       <div className="poster">
         {/* Poster Image */}
         <img
-          src="qr1.jpg" /* Replace with your poster image path */
+          src="qr.jpg" /* Replace with your poster image path */
           alt="Task Poster"
           className="poster-image"
         />
